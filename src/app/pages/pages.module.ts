@@ -5,7 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
 import { FormsModule } from '@angular/forms';
 
-import { ChartsModule } from 'ng2-charts';
+
 
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {Graph1Component} from './graph1/graph1.component';
@@ -30,8 +30,7 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
   imports: [
     CommonModule,
     FormsModule,
-    ChartsModule,
-    
+        
     SharedModule,
     AppRoutingModule,
     ComponentsModule    
