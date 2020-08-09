@@ -12,6 +12,8 @@ import {Graph1Component} from './graph1/graph1.component';
 import {PagesComponent} from './pages.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -22,13 +24,16 @@ import { AccountSettingComponent } from './account-setting/account-setting.compo
     Graph1Component,
     ProgressbarComponent,
     AccountSettingComponent,
+    PromisesComponent,
+    RxjsComponent,
   ],
   exports:[
     PagesComponent,
     DashboardComponent,
     Graph1Component,
     ProgressbarComponent,
-    AccountSettingComponent
+    AccountSettingComponent,
+    PromisesComponent
   ],
   imports: [
     CommonModule,
