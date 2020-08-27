@@ -36,46 +36,13 @@ export class SignupComponent {
     this.usuarioService.crearUsuario(this.registerForm.value)
       .subscribe(resp => {
 
-        // Navegar al Dashboard
-        this.router.navigateByUrl('/dashboard');
-
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'top-end',
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-          onOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer)
-            toast.addEventListener('mouseleave', Swal.resumeTimer)
-          }
-        })
-
-        Toast.fire({
-          icon: 'success',
-          title: 'Registro realizado con éxito!'
-        })
+       Swal.fire('Éxito', 'Registro realizado con éxito!!', 'success');
       },
         (err) => {
 
-          const Toast = Swal.mixin({
-            toast: true,
-            position: 'center',
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            onOpen: (toast) => {
-              toast.addEventListener('mouseenter', Swal.stopTimer)
-              toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-          })
-
-          Toast.fire({
-            icon: 'error',
-            title: err.error.message
-          })
-
-        });
+          Swal.fire('Error', err.error.message, 'error');
+          
+      });
   }
   camposNoValidos(campo: string): boolean {
 
