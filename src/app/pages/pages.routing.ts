@@ -10,6 +10,7 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
 import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 const routes: Routes = [
@@ -20,11 +21,12 @@ const routes: Routes = [
         children:
           [
             { path: '', component: DashboardComponent, data:{title: 'Dashboard'} },
-            {path:'graph1',component: Graph1Component, data:{title: 'Graph # 1'} },     
-            {path:'progress',component: ProgressbarComponent, data:{title: 'Progress Bar'} }, 
             {path:'account-setting',component: AccountSettingComponent, data:{title: 'Temas'} }, 
+            {path:'graph1',component: Graph1Component, data:{title: 'Graph # 1'} },     
+            {path:'rxjs',component: RxjsComponent, data:{title: 'Rxjs'} },   
+            {path:'perfil',component: PerfilComponent, data:{title: 'Perfil de Usuario'} },    
+            {path:'progress',component: ProgressbarComponent, data:{title: 'Progress Bar'} }, 
             {path:'promise',component: PromisesComponent, data:{title: 'Promises'} }, 
-            {path:'rxjs',component: RxjsComponent, data:{title: 'Rxjs'} },       
           ]
       },   
 ];

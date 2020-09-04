@@ -16,3 +16,15 @@
     justify-content: center;
     text-align: center;
 }
+.cardperfil{
+    max-height: 12.8rem;
+    max-width: 12.8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.mycard{
+    min-height: 29rem;
+}
+
